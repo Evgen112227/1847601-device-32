@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Yauheni Hladki](https://up.htmlacademy.ru/htmlcss/32/user/1847601).
-* Наставник: `Неизвестно`.
+- Студент: [Yauheni Hladki](https://up.htmlacademy.ru/htmlcss/32/user/1847601).
+- Наставник: `Наталья Налимова`.
 
 ---
 
