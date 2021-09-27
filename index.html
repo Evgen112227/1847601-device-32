@@ -26,11 +26,44 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="">Корзина</a>
+          <div class="basket-modal-window">
+            <ul class="basket-elements">
+              <li class="basket-element">
+                <img src="#" alt="селфи-палка">
+                <p>Любительская селфи-палка</p>
+                <button>Закрыть</button>
+              </li>
+              <li class="basket-element">
+                <img src="#" alt="профессиональная селфи-палка">
+                <p>Профессиональная селфи-палка</p>
+                <button>Закрыть</button>
+                <dl>
+                  <dt>Товаров</dt>
+                  <dd>2</dd>
+                  <dt>Сумма</dt>
+                  <dd>2000<span>₽</span></dd>
+                </dl>
+                <a href="#">Открыть корзину</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
       <ul class="site-navigation">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Каталог</a>
+          <ul class="sub-menu-left">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+          <ul class="sub-menu-center">
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+          </ul>
+          <ul class="sub-menu-right">
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка</a>
@@ -159,41 +192,44 @@
       </ul>
     </section>
 
-    <section class="delivery">
-      <ul class="delivery-list">
-        <li class="delivery-item">
-          <p>Доставка</p>
-          <h2>Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно! Ведь
-            мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-          <img class="delivery-image" src="" alt="Доставка">
-        </li>
-        <li class="garanty-item">
-          <p>Гарантия</p>
-          <h2>Гарантия</h2>
-          <p>Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.
-          </p>
-          <img class="garanty-image" src="" alt="Гарантия">
-        </li>
-        <li class="credit-item">
-          <p>Кредит</p>
-          <h2>Кредит</h2>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты
-            подберут для вас наиболее выгодные условия кредита.
-            Выгодные для банка, разумеется.
-          </p>
-          <img class="credit-image" src="" alt="Кредит">
-        </li>
-      </ul>
+    <section class="advantages-list">
+      <h2 class="visually-hidden">Список преимуществ</h2>
+      <nav class="tabs-of-advantages">
+        <ul class="list-of-advantages">
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#garanty">Гарантия</a></li>
+          <li><a href="#credit">Кредит</a></li>
+        </ul>
+      </nav>
+
+      <div id="delivery">
+        <h3>Доставка</h3>
+        <p>Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
+          мы неплохо заработаем, поднимая его на ваш этаж.
+        </p>
+      </div>
+      <div id="garanty">
+        <h3>Гарантия</h3>
+        <p>Если из-за возгорания купленного у нас товара у вас
+          сгорит дом — не переживайте, мы выдадим вам новый.
+          Товар, не дом, конечно же.
+        </p>
+      </div>
+      <div id="credit">
+        <h2>Кредит</h2>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты
+          подберут для вас наиболее выгодные условия кредита.
+          Выгодные для банка, разумеется.
+        </p>
+      </div>
+
       <div>
         <img src="" alt="Лого доставки">
         <button type="button">Доставим редкий товар под заказ</button>
         <img src="" alt="лого информация">
       </div>
+
     </section>
 
     <section class="about-and-contacs">
