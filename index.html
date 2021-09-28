@@ -3,65 +3,54 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
-  <header class="main-header">
 
-    <nav class="navigation">
+  <header class="main-header">
+    <a class="logo-ref">
       <img class="logo" src="#" alt="Логотип магазина Device">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <form action="#" method="POST">
-            <input type="search" placeholder="Поиск по сайту">
-          </form>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">Вход</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">Сравнить</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">Корзина</a>
-          <div class="basket-modal-window">
-            <ul class="basket-elements">
-              <li class="basket-element">
-                <img src="#" alt="селфи-палка">
-                <p>Любительская селфи-палка</p>
-                <button>Закрыть</button>
-              </li>
-              <li class="basket-element">
-                <img src="#" alt="профессиональная селфи-палка">
-                <p>Профессиональная селфи-палка</p>
-                <button>Закрыть</button>
-                <dl>
-                  <dt>Товаров</dt>
-                  <dd>2</dd>
-                  <dt>Сумма</dt>
-                  <dd>2000<span>₽</span></dd>
-                </dl>
-                <a href="#">Открыть корзину</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+    </a>
+    <form action="#" method="POST">
+      <input type="search" placeholder="Поиск по сайту">
+    </form>
+    <div class="user-menu">
+      <a class="navigation-link" href="">Вход</a>
+      <a class="navigation-link" href="">Сравнить</a>
+      <a class="navigation-link" href="">Корзина</a>
+      <div class="basket-modal-window">
+        <ul class="basket-elements">
+          <li class="basket-element">
+            <img src="#" alt="селфи-палка">
+            <p>Любительская селфи-палка</p>
+            <button>Закрыть</button>
+          </li>
+          <li class="basket-element">
+            <img src="#" alt="профессиональная селфи-палка">
+            <p>Профессиональная селфи-палка</p>
+            <button>Закрыть</button>
+            <dl>
+              <dt>Товаров</dt>
+              <dd>2</dd>
+              <dt>Сумма</dt>
+              <dd>2000<span>₽</span></dd>
+            </dl>
+            <a href="#">Открыть корзину</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navigation">
       <ul class="site-navigation">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Каталог</a>
-          <ul class="sub-menu-left">
+          <ul class="sub-menu">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
-          </ul>
-          <ul class="sub-menu-center">
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
-          </ul>
-          <ul class="sub-menu-right">
             <li><a href="#">Квадрокоптеры</a></li>
           </ul>
         </li>
@@ -80,8 +69,8 @@
   </header>
 
   <main class="main-index">
-    <h1 class="visually-hidden">Интернет-магазин Device</h1>
 
+    <h1 class="visually-hidden">Интернет-магазин Device</h1>
     <section class="slider">
       <h2 class="visually-hidden">
         Слайдер товаров
@@ -89,9 +78,6 @@
       <ul class="slider-pagination">
         <li class="slider-pagination-item">
           <span class="visually-hidden">1 товар</span><br>
-          <button class="prev-button" type="button">Назад</button>
-          <img class="slider-first-image" src="#" alt="Квадрокоптер">
-          <button class="next-button" type="button">Вперед</button>
           <p>
             <b>Порхает как бабочка, жалит как пчела</b>
           </p>
@@ -101,19 +87,16 @@
           <a href="#">Подробнее</a>
           <table class="table-first">
             <tr>
-              <th>800 м</th>
-              <th>50 м</th>
+              <td>800 м</td>
+              <td>50 м</td>
             </tr>
             <tr>
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
+              <th>Дальность полета</th>
+              <th>Радиус поражения</th>
             </tr>
           </table>
         <li class="slider-pagination-item">
           <span class="visually-hidden">2 товар</span><br>
-          <button class="prev-button" type="button">Назад</button>
-          <img class="slider-second-image" src="#" alt="Фитнес браслет">
-          <button class="next-button" type="button">Вперед</button>
           <p>
             <b>Худеем правильно</b>
           </p>
@@ -122,18 +105,15 @@
           <a href="#">Подробнее</a>
           <table class="table-first">
             <tr>
-              <th>48 часов</th>
+              <td>48 часов</td>
             </tr>
             <tr>
-              <td>Без подзарядки</td>
+              <th>Без подзарядки</th>
             </tr>
           </table>
         </li>
         <li class="slider-pagination-item">
           <span class="visually-hidden">3 товар</span><br>
-          <button class="prev-button" type="button">Назад</button>
-          <img class="slider-first-image" src="#" alt="Палка селфи">
-          <button class="next-button" type="button">Вперед</button>
           <p>
             <b>Делай селфи,
               как Бен Стиллер! </b>
@@ -144,47 +124,64 @@
           <a href="#">Подробнее</a>
           <table class="table-first">
             <tr>
-              <th>8.5 м</th>
-              <th>5 кг</th>
-              <th>Карбон</th>
+              <td>8.5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
             </tr>
             <tr>
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материали</td>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материали</th>
             </tr>
           </table>
         </li>
       </ul>
 
+      <div class="control-elements">
+        <button class="prev-button" type="button">Назад</button>
+        <img class="slider-first-image" src="#" alt="Палка селфи">
+        <button class="next-button" type="button">Вперед</button>
+      </div>
     </section>
 
     <section class="catalog-items">
       <h2 class="visually-hidden"> Каталог товаров</h2>
       <ul class="catalog-items-list">
         <li>
-          <img class="catalog-item" src="#" alt="Шлем VR">
-          <a class="navigation-link" href="#">Виртуальная реальность</a>
+          <a class="navigation-link" href="#">
+            <h3>Виртуальная реальность</h3>
+            <img class="catalog-item" src="#" alt="Шлем VR">
+          </a>
         </li>
         <li>
-          <img class="catalog-item" src="#" alt="Монопод">
-          <a class="navigation-link" href="#">Моноподы для селфи</a>
+          <a class="navigation-link" href="#">
+            <h3>Моноподы для селфи</h3>
+            <img class="catalog-item" src="#" alt="Монопод">
+          </a>
         </li>
         <li>
-          <img class="catalog-item" src="#" alt="Экшн-камера">
-          <a class="navigation-link" href="#">Экшн-камеры</a>
+          <a class="navigation-link" href="#">
+            <h3>Экшн-камеры</h3>
+            <img class="catalog-item" src="#" alt="Экшн-камера">
+          </a>
         </li>
         <li>
-          <img class="catalog-item" src="#" alt="Фитнес-браслет">
-          <a class="navigation-link" href="#">Фитнес-браслеты</a>
+          <a class="navigation-link" href="#">
+            <h3>Фитнес-браслеты</h3>
+            <img class="catalog-item" src="#" alt="Фитнес-браслет">
+          </a>
         </li>
         <li>
-          <img class="catalog-item" src="#" alt="Умные часы">
-          <a class="navigation-link" href="#">Умные часы</a>
+          <a class="navigation-link" href="#">
+            <h3>Умные часы</h3>
+            <img class="catalog-item" src="#" alt="Умные часы">
+          </a>
         </li>
         <li>
-          <img class="catalog-item" src="#" alt="Квадрокоптер">
-          <a class="navigation-link" href="#">Квадрокоптеры</a>
+          <a class="navigation-link" href="#">
+            <h3>Квадрокоптеры</h3>
+            <img class="catalog-item" src="#" alt="Квадрокоптер">
+          </a>
         </li>
       </ul>
     </section>
@@ -223,7 +220,7 @@
 
       <div>
         <img src="#" alt="Лого доставки">
-        <button type="button">Доставим редкий товар под заказ</button>
+        <a href="#">Доставим редкий товар под заказ</a>
         <img src="#" alt="лого информация">
       </div>
 
@@ -289,7 +286,6 @@
           <input placeholder="Ваш e-mail">
           <button>Подписаться</button>
         </form>
-        <img src="#" alt="зеленая галочка">
         <p>Это бесплатно</p>
       </div>
     </section>
