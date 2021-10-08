@@ -18,13 +18,13 @@
     </form>
     <ul class="user-menu">
       <li>
-        <a class="navigation-link" href="">Вход</a>
+        <a class="navigation-link enter" href="">Войти</a>
       </li>
       <li>
-        <a class="navigation-link" href="">Сравнить</a>
+        <a class="navigation-link compare" href="">Сравнить</a>
       </li>
       <li>
-        <a class="navigation-link" href="">Корзина</a>
+        <a class="navigation-link basket" href="">Корзина</a>
         <div class="basket-modal-window">
           <ul class="basket-elements">
             <li class="basket-element">
@@ -51,7 +51,7 @@
     <nav class="navigation">
       <ul class="site-navigation">
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+          <a class="navigation-link-catalog" href="catalog.html">Каталог товаров</a>
           <ul class="sub-menu">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
@@ -85,8 +85,8 @@
       <ul class="slider-pagination">
         <li class="slider-pagination-item">
           <span class="visually-hidden">1 товар</span><br>
-          <p>
-            <b>Порхает как бабочка, жалит как пчела</b>
+          <p class="phrase">
+            <b>Порхает как бабочка,<br> жалит как пчела</b>
           </p>
           <p>Этот обычный, на первый взгляд, квадрокоптер
             оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -105,7 +105,7 @@
         </li>
         <li class="slider-pagination-item">
           <span class="visually-hidden">2 товар</span><br>
-          <p>
+          <p class="phrase">
             <b>Худеем правильно</b>
           </p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -122,7 +122,7 @@
         </li>
         <li class="slider-pagination-item">
           <span class="visually-hidden">3 товар</span><br>
-          <p>
+          <p class="phrase">
             <b>Делай селфи,
               как Бен Стиллер! </b>
           </p>
@@ -139,7 +139,7 @@
             <tr>
               <th>Длина палки</th>
               <th>Вес палки</th>
-              <th>Материали</th>
+              <th>Материал</th>
             </tr>
           </table>
         </li>
@@ -241,7 +241,7 @@
         <p>
           Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
         </p>
-        <ul>
+        <ul class="transport-companies">
           <li>Меловые линии</li>
           <li>СДИК</li>
           <li>ТоксБерри</li>
@@ -256,16 +256,16 @@
           Вы можете забрать товар сами, заехав в наш офис.
           Заодно, сможете проверить работоспособность покупки.
         </p>
-        <b>
+        <p class="device">
           Интернет-магазин «Девайс»
-        </b>
+        </p>
         <p class="contacts-address">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </p>
         <a class="contacts-phone" href="tel:78128121212">
           + 7 (812) 812-12-12
         </a>
-        <p>
+        <p class="device">
           <b>Время работы</b>
         </p>
         <p>
@@ -289,7 +289,7 @@
       </div>
       <div>
         <form>
-          <input placeholder="Ваш e-mail">
+          <input class="email" placeholder="Ваш e-mail">
           <button class="subscribe-button" href="#">Подписаться</button>
         </form>
         <p>Это бесплатно</p>
@@ -318,28 +318,32 @@
       </ul>
       <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7(812)812-12-12</a>
     </div>
-    <div>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Фэйсбук</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.instagram.com/htmlacademy/">
-            <span class="visually-hidden">Инстаграмм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
+    <div class="wrapper-footer-socials">
+      <div class="rect"></div>
+      <div>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button social-facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button social-instagram"" href=" https://www.instagram.com/htmlacademy/"> <span
+              class="visually-hidden">Инстаграмм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button social-twitter" href="https://twitter.com/htmlacademy">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <a class="about-text" href="https://htmlacademy.ru/">
         <img src="img/htmlacademy.svg" alt="логотип htmlacademy" width="115" height="34">
       </a>
     </div>
+
   </footer>
 </body>
 
