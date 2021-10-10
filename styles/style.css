@@ -30,13 +30,24 @@
     font-display: swap;
 }
 
+html{
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
     background-color: #fff;
     color: #000;
+}
+
+.main-container{
+    flex-grow: 1;
 }
 
 a,
@@ -70,11 +81,29 @@ li {
 }
 /*---------------HEADER--------------------------------------------*/
 
-.logo-ref .logo {
-    position: absolute;
-    top: -30px;
-    left: 61px;
+.user-menu-wrapper{
+    display: flex;
 }
+
+ul.user-menu{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+.site-navigation{
+    display: flex;
+    width: 1040px;
+    justify-content: space-between;
+}
+
+.header-wrapper{
+    width:1041px;
+    margin: 0 auto;
+}
+
 
 .main-header {
     margin-top: 40px;
@@ -142,6 +171,11 @@ li {
     color: rgba(0, 0, 0, 0.3)
 }
 /*---------------------SLIDER----------------------------------------------*/
+section.slider{
+    margin: 0 auto;
+    width: 1160px;
+}
+
 
 .slider .phrase {
     font-family: "Raleway", sans-serif;
@@ -159,6 +193,8 @@ li {
     font-weight: 400;
 }
 /*------------------------------CATALOG-ITEMS-------------------------------------*/
+
+
 .catalog-items h3{
     font-size: 18px;
     line-height: 24px;
@@ -167,6 +203,10 @@ li {
 
 .navigation-link-catalog {
     position: relative;
+}
+
+.catalog-items-list{
+    padding: 0;
 }
 
 .catalog-items-list img {
@@ -178,6 +218,15 @@ li {
     justify-content: space-around;
 }
 
+.catalog-items-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.catalog-items {
+    display: flex;
+    justify-content: space-between;
+}
 /*---------------------------------------ADVANTAGES LIST--------------------------------*/
 .advantages-list h3{
     font-family: "Raleway", sans-serif;
@@ -185,7 +234,9 @@ li {
     line-height: 50px;
 }
 .modal-delivery{
-    
+    position: relative; 
+    width: 1160px;
+    margin: 0 auto;
     margin-bottom: 90px;
     background-color: #F0F0F0;
     height: 100px;
@@ -216,11 +267,34 @@ li {
     right: 0;
 }
 
+.wrapper-advantages-list {
+    width: 1160px;
+    margin: 0 auto;
+}
+
 /*------------------------------------ABOUT AND CONTACTS-----------------------------*/
 .about-and-contacs h2{
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     line-height: 50px;
+}
+
+.about-us, 
+.contacts {
+    width: 560px;
+}
+
+.rect-blak{
+    width: 80px;
+    height: 7px;
+    background-color: #000;
+}
+
+.about-and-contacts-wrapper{
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+
 }
 
 .contacts .contacts-phone{
@@ -254,6 +328,8 @@ li {
 
 .sign-to-subscription{
     background-color: #F0F0F0;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .sign-to-subscription h2{
@@ -271,11 +347,32 @@ li {
     font-size: 18px;
     line-height: 30px;
 }
+.h2-wrapper{
+    width:560px;
+}
+.p-wrapper{
+    width:560px;
+}
+
+.h2-p-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 
 /*----------------------------------------------------FOOTER-----------------------------------------*/
 .main-footer {
     background-color: #444444;
     color: #fff;
+}
+
+.footer-wrapper{
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .main-footer a{
@@ -350,6 +447,12 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+.footer-mini-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+}
+
 /*-----------------------------------------CATALOG-----------------------------*/
 
 .inner-header h1{
