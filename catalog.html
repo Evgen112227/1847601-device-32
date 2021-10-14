@@ -12,24 +12,22 @@
 <body>
   <header class="main-header">
     <div class="header-wrapper">
-      <a class="logo-ref" href="index.html">
+      <a class="logo-ref">
         <img class="logo" src="img/header-logo.svg" alt="Логотип магазина Device" width="145" height="36">
       </a>
       <div class="user-menu-wrapper">
-        <form action="#" method="POST">
+        <form action="#" method="POST" class="form">
           <input type="search" placeholder="Поиск по сайту">
         </form>
         <ul class="user-menu">
-          <li>
+          <li class="user-name">
             <a class="navigation-link enter" href="">Коля Петухов</a>
-          </li>
-          <li>
             <a class="navigation-link exit" href="">Выйти</a>
           </li>
-          <li>
+          <li class="comp">
             <a class="navigation-link compare" href="">Сравнить</a>
           </li>
-          <li>
+          <li class="bask">
             <a class="navigation-link basket" href="">Корзина</a>
             <div class="basket-modal-window">
               <ul class="basket-elements">
@@ -58,8 +56,8 @@
 
       <nav class="navigation">
         <ul class="site-navigation">
-          <li class="navigation-item">
-            <a class="navigation-link-catalog" href="catalog.html">Каталог товаров</a>
+          <li class="navigation-item-cat">
+            <a class="navigation-link-catalog s-button" href="catalog.html">Каталог товаров</a>
             <ul class="sub-menu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
@@ -69,14 +67,14 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
+          <li class="navigation-item-del">
+            <a class="navigation-link s-button" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item-har">
+            <a class="navigation-link s-button" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="navigation-link s-button" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -103,8 +101,9 @@
       </header>
       <div class="inner-wrapper">
         <section class="catalog-products">
-          <h2>Фильтр:</h2>
-
+          <div class="catalog-filter">
+            <h2>Фильтр:</h2>
+          </div>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
@@ -180,22 +179,24 @@
               </ul>
             </fieldset>
 
-            <button class="button" type="submit">Показать</button>
+            <button class="button s-button" type="submit">Показать</button>
           </form>
         </section>
 
         <section class="goods-list">
-          <h2>Сортировка:</h2>
-          <form class="sorting-type">
-            <label class="visually-hidden" for="sorting">Сортировка</label>
-            <select class="select-control" id="sorting" name="sorting">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
-          </form>
-          <button>вверх</button>
-          <button>вниз</button>
+          <div class="goods-list-wrapper">
+            <h2>Сортировка:</h2>
+            <form class="sorting-type">
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+              <select class="select-control" id="sorting" name="sorting">
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+            </form>
+            <button>вверх</button>
+            <button>вниз</button>
+          </div>
           <ul class="product-list">
             <li>
               <div class="product-card" data-title="Подробнее">
@@ -246,36 +247,40 @@
               </div>
             </li>
           </ul>
-          <a class="load-more" href="#">
-            Загрузить ещё
-          </a>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">
+          <div class="load-more-wrapper">
+            <a class="load-more s-button" href="#">
+              Загрузить ещё
+            </a>
+          </div>
+          <div class="pagination">
+            <div class="pagination-item-first">
+              <a class="pagination-link pagination-prev pagination-disabled s-button" href="#">
                 Назад
               </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">15</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
+            </div>
+            <ul>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+            </ul>
+            <div class="pagination-item-last">
+              <a class="pagination-link pagination-next s-button" href="#">
                 Вперед
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
 
         </section>
       </div>
@@ -295,20 +300,20 @@
         </p>
         <ul class="footer-list">
           <li>
-            <a href="#">Доставка</a>
+            <a class="s-button" href="#">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="s-button" href="#">Гарантия</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="s-button cont" href="#">Контакты</a>
           </li>
         </ul>
         <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7(812)812-12-12</a>
       </div>
       <div class="wrapper-footer-socials">
         <div class="rect"></div>
-        <div>
+        <div class="footer-social-list-wrapper">
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button social-facebook" href="https://www.facebook.com/htmlacademy">
