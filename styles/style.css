@@ -1041,7 +1041,10 @@ padding: 0;
 .product-card-image-wrapper{
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: flex-start;
+}
+.product-card-image-wrapper h3{
+    margin: 0;
 }
 
 .pagination{
