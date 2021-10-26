@@ -143,14 +143,19 @@ ul.user-menu{
 }
 
 .navigation{
-    width: 1040px;
+    width: 1080px;
+    margin: 0 auto;
 }
 
 .site-navigation{
     display: flex;
     flex-wrap: wrap;
     padding-left:0;
-    margin-left: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    /* margin-left: 8px; */
 }
 
 .header-wrapper{
@@ -173,13 +178,6 @@ ul.user-menu{
     color: #000;
 }
 
-.site-navigation {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-}
-
 .enter,
 .compare,
 .basket {
@@ -192,13 +190,65 @@ ul.user-menu{
 }
 
 .enter{
-    width: 245px;
+    width: 197px;
     padding-left: 46px;
+    border-radius: 20px;
 }
 
-.compare{
+.enter:focus, 
+.compare:focus,
+.basket:focus,
+.navigation-link-catalog:focus,
+.navigation-item-cat:focus,
+.navigation-link.s-button:focus,
+input[type="search"]:focus {
+    outline:none;
+    border-radius: 20px;    
+    outline: 2px solid #AF4FFF;
+    box-sizing: border-box;
+}   
+
+.navigation-link-catalog{
+    padding: 14px 20px;
+}
+
+.navigation-link.s-button{
+    position: relative;
+}
+
+.navigation-link.s-button:hover:after{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top:40px;
+    right:20px;
+    height:2px;
+    background-color: #000000;
+}
+
+.navigation-link.s-button:active{
+    opacity: 0.3;
+}
+
+.enter:hover,
+.compare:hover,
+.basket:hover{
+    opacity: 0.6;
+}
+
+
+.enter:active,
+.compare:active,
+.basket:active{
+    opacity: 0.3;
+}
+
+
+
+.compare{   
     width:136px;
     padding-left: 35px;
+    border-radius: 20px;
 }
 
 .basket{
@@ -206,6 +256,8 @@ ul.user-menu{
     padding-left: 44px;
     border-radius: 20px;
 }
+
+
 
 .enter::before {
     content: " ";
@@ -215,6 +267,7 @@ ul.user-menu{
     left: 20px;
     background: url("../img/user.svg") no-repeat center;
 }
+
 
 .compare::before {
     content: " ";
@@ -244,14 +297,12 @@ input[type="search"] {
     background-image:none;
     background-color:transparent;
     box-shadow: none;
-    background-image: url("../img/search.svg");
-    background-repeat: no-repeat;
-    background-position: 5px;
+    background: url("../img/search.svg") no-repeat 5px;
     width: 516px;
     padding:10px;
     padding-left: 40px;
     border-radius: 20px;
-    /* margin-right: 15px; */
+    color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -269,7 +320,11 @@ input[type="search"] {
 section.slider{
     margin: 0 auto;
     width: 1160px;
-}
+    margin-top: -45px;
+    counter-reset: sect;
+    position:relative;
+    z-index:3;
+}   
 
 .slider-image-wrapper{
     width:560px;
@@ -317,6 +372,21 @@ section.slider{
     display:flex;
 }
 
+.slider-pagination::before{
+    position: absolute;
+    left: 900px;
+    top: -30px;
+    counter-increment: sect;
+    content: "0"counter(sect);
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 180px;
+    line-height: 30px;
+    color: #FFFFFF;
+    z-index: -1;
+}
+
 .slider .phrase {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -336,7 +406,7 @@ section.slider{
 
 .outer-wrapper{
     display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 
@@ -347,18 +417,18 @@ section.slider{
 }
 
 .navigation-item-cat{
-    width: 236px;
-    margin-right:304px;
+    width: 273px;
+    margin-right:245px;
 }
 
 .navigation-item-del{
-    width:140px;
-    margin-right:19px;
+    width:170px;
+    /* margin-right:19px; */
 }
 
 .navigation-item-har{
-    width: 140px;
-    margin-right: 62px;
+    width: 170px;
+    margin-right: 32px;
 }
 
 .catalog-items-list{
@@ -368,6 +438,13 @@ section.slider{
 .catalog-items-list img {
     background-color:#FFE17F;
 }
+
+
+
+.navigation-link.s-button{
+    padding: 14px 20px;
+}
+
 .catalog-items-list {
     display: flex;
     flex-wrap:wrap;
@@ -420,16 +497,40 @@ section.slider{
     width: 100px;
     height: 100px;
     left: 0;
+    pointer-events: none;
 }
 
 .modal-delivery::after {
     content: " ";
     position: absolute;
-    background: url("../img/info1.png") no-repeat center;
+    background: url("../img/Group2.png") no-repeat center;
     width: 100px;
     height: 100px;
     right: 0;
     top: 0;
+    pointer-events: none;
+    z-index:2;
+    opacity: 0.5;
+}
+
+
+.modal-delivery:focus{
+    outline:none;  
+    outline: 5px solid #AF4FFF;
+    box-sizing: border-box;
+}
+
+.modal-delivery:hover:before{
+    background-color: #FFC700;
+}
+
+.modal-delivery:hover:after{
+    opacity: 1;
+}
+
+.modal-delivery a:active,
+.modal-delivery:active:before{
+    opacity: 0.3;
 }
 
 .wrapper-advantages-list {
@@ -439,8 +540,20 @@ section.slider{
 
 .tabs-of-advantages{
     width: 170px;
-    border-right: 7px solid #000;
     margin-right: 116px;
+    position:relative;
+}
+
+.tabs-of-advantages:after{
+    content: ' ';
+    position: absolute;
+    width: 7px;
+    height:320px;
+    left: 277px;
+    top:-50px;
+    background-color: #000;
+
+    
 }
 
 .list-of-advantages{
@@ -449,9 +562,56 @@ section.slider{
 }
 
 .list-of-advantages li{
+    position:relative;
     margin-bottom:34px;
     padding-top:10px;
     padding-bottom:10px;
+    width: 160px;
+    text-align:center;
+}
+
+.list-of-advantages li::before{
+    content:' ';
+    position: absolute;
+    width: 160px;
+    height: 8px;
+    background-color: #FFC700;
+    top: 21px;
+    left: 0;
+    z-index: -2;
+}
+
+.list-of-advantages li a:focus:before{
+    content:' ';
+    position: absolute;
+    width: 160px;   
+    height: 8px;
+    background-color:#AF4FFF;
+    top: 21px;
+    left: 0;
+    z-index: -1;
+}
+
+.list-of-advantages li:hover:before{
+    content:' ';
+    position: absolute;
+    width: 160px;   
+    height: 50px;
+    background-color: #FFC700;
+    top: 0;
+    left: 0;
+}
+
+.list-of-advantages li:active a{
+    color:#FFE17F;
+}
+
+.list-of-advantages li:active:before{
+    content: '';
+    position:absolute;
+    width: 280px;
+    height: 50px;
+    background-color: #000;
 }
 
 .adv-list-wrapper{
@@ -465,6 +625,7 @@ section.slider{
 
 #delivery{
     position:relative;
+    margin-left: 120px;
 }
 
 #delivery::after{
@@ -474,7 +635,7 @@ section.slider{
     height: 240px;
     background: url("../img/illustration-delivery1.png") no-repeat center;
     top:10px;
-    right:-400px;
+    right:-300px;
 }
 
 /*------------------------------------ABOUT AND CONTACTS-----------------------------*/
@@ -887,7 +1048,7 @@ padding: 0;
 .catalog-products{
     display:flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 975px;
     background-color:#EBEBEB;
 }
 
@@ -1011,7 +1172,7 @@ padding: 0;
 
 .goods-list{
     display:flex;
-    flex-basis: 50%;
+    flex-basis: 1475px;
     flex-direction: column;
 }
 
