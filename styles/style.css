@@ -201,7 +201,8 @@ ul.user-menu{
 .navigation-link-catalog:focus,
 .navigation-item-cat:focus,
 .navigation-link.s-button:focus,
-input[type="search"]:focus {
+input[type="search"]:focus,
+.nav-footer:focus {
     outline:none;
     border-radius: 20px;    
     outline: 2px solid #AF4FFF;
@@ -228,6 +229,7 @@ input[type="search"]:focus {
 
 .navigation-link.s-button:active{
     opacity: 0.3;
+    outline:none;
 }
 
 .enter:hover,
@@ -241,6 +243,7 @@ input[type="search"]:focus {
 .compare:active,
 .basket:active{
     opacity: 0.3;
+    outline:none;
 }
 
 
@@ -419,14 +422,24 @@ section.slider{
 .navigation-item-cat{
     width: 273px;
     margin-right:245px;
+    
 }
+
+.nav-footer{
+    position: relative;
+}
+
+.nav-footer:hover{
+    color:#FFC700;
+}
+    
 
 .navigation-item-del{
     width:170px;
     /* margin-right:19px; */
 }
 
-.navigation-item-har{
+.navigation .navigation-item-har{
     width: 170px;
     margin-right: 32px;
 }
@@ -439,9 +452,17 @@ section.slider{
     background-color:#FFE17F;
 }
 
+.nav-footer:hover:after{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top:40px;
+    right:20px;
+    height:2px;
+    background-color: #FFE17F;
+}
 
-
-.navigation-link.s-button{
+.navigation-link.s-button, .s-button{
     padding: 14px 20px;
 }
 
@@ -531,6 +552,7 @@ section.slider{
 .modal-delivery a:active,
 .modal-delivery:active:before{
     opacity: 0.3;
+    outline:none;
 }
 
 .wrapper-advantages-list {
@@ -812,6 +834,22 @@ section.slider{
     border: 3px solid rgba(0, 0, 0, 0.1);
 }
 
+.subscribe-button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.subscribe-button:focus{
+    border: none;
+    outline: 3px solid #AF4FFF;
+}
+
+.subscribe-button:active{
+    outline:none;
+    color: rgba(255,255,255,0.3);
+    background-color: #000;
+}
+
 /*----------------------------------------------------FOOTER-----------------------------------------*/
 .main-footer {
     background-color: #444444;
@@ -840,30 +878,41 @@ section.slider{
     line-height: 19px;
 }
 
+.navigation-icon{
+    fill: #444444;
+}
+
 .footer-contacts-address-phone{
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
     margin-left: auto;
+    padding: 3px 15px;
 }
 
 .footer-contacts-address-phone:hover{
     color: #FFC500;
 }
 
+.footer-contacts-address-phone:focus{
+    outline: 2px solid #AF4FFF;
+    border-radius: 25px;
+}
+
+.footer-contacts-address-phone:active{
+    opacity: 0.3;
+    outline:none;
+}
+
+
+
+
 .footer-list {
     display: flex;
     flex-wrap: wrap;
     width: 515px;
     justify-content: space-between;
-}
-
-
-.rect {
-    width: 80px;
-    height: 7px;
-    background-color:#FFC500;
 }
 
 .footer-social-list{
@@ -877,28 +926,31 @@ section.slider{
 
 .footer-social-list a{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.3);
     display: block;
+    margin-right: 15px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 15px;
-}
-
-.footer-social-list .social-facebook{
-    background-image: url("../img/facebook.svg");
-}
-
-.footer-social-list .social-instagram{
-    background-image: url("../img/instagram.svg");
-}
-
-.footer-social-list .social-twitter{
-    background-image: url("../img/twitter.svg");
+    background-color: rgba(255,255,255,0.3)
 }
 
 .footer-social-list a:hover{
     background-color:#FFC700;
+}
+
+.footer-social-list a:focus{
+    box-shadow: inset 0 0 0 4px #AF4FFF;
+    outline: none;
+    background-color: #444;
+}
+
+.footer-social-list a:focus .navigation-icon{
+    fill: #fff;
+}
+
+.footer-social-list a:active{
+    background-color:#FFC700;
+    outline:none;
 }
 
 .wrapper-footer-socials{
@@ -969,6 +1021,47 @@ padding: 0;
 .about-text-container{
     width: 280px;
     text-align: right;
+}
+
+.about-text:hover{
+    fill: red;
+}
+
+.navigation-item-del,
+.navigation-item-har,
+.navigation-item-cont {
+    width: 160;
+    border-radius: 25px;
+}
+
+.nav-footer:active{
+    opacity: 0.3;
+    outline:none;
+}
+
+.html-icon-footer{
+    fill: #FFC700;
+}
+
+.html-icon-footer:hover{
+    fill:#fff;
+}
+
+.html-icon-footer{
+    padding: 10px;
+}
+
+.about-text:focus{
+    outline: 2px solid #AF4FFF;
+    border-radius: 25px;
+}
+
+.about-text:active{
+    outline: none;
+}
+
+.html-icon-footer:active{
+    opacity: 0.3;
 }
 /*-----------------------------------------CATALOG-----------------------------*/
 
